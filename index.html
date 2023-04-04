@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+  </head>
+  <body>
+    <form action="get">
+      <h1>Registration Form</h1>
+      <p>Name</p>
+      <label for="fName">First Name</label>
+      <input type="text" name="fName" id="fName" required />
+      <label for="lName">Last Name</label>
+      <input type="text" name="lName" id="lName" required />
+
+      <br /><br />
+
+      <label for="comp">Company</label>
+      <input type="text" name="comp" id="comp" />
+
+      <br /><br />
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" required />
+
+      <br /><br />
+
+      <label for="num">Phone</label>
+      <input
+        type="tel"
+        name="num"
+        id="num"
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"
+        placeholder="071-234-567"
+      />
+
+      <br /><br />
+      <label for="izbor">Subject</label>
+      <select name="izbor" id="izbor">
+        <option disabled selected>Izberi</option>
+        <option value="prv">Prv</option>
+        <option value="vtor">Vtor</option>
+        <option value="tret">Tret</option>
+      </select>
+
+      <br /><br />
+      <label for="existingCustomer">Are you an existing customer</label><br />
+      <input type="radio" name="existingCustomer" id="yes" />
+      <label for="yes">Yes</label>
+      <input type="radio" name="existingCustomer" id="no" />
+      <label for="no">No</label>
+
+      <br /><br />
+
+      <button type="submit">REGISTER</button>
+    </form>
+  </body>
+</html>
